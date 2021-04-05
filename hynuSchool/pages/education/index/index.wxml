@@ -1,0 +1,31 @@
+<!--pages/education/index/index.wxml-->
+<view class="global">
+
+<view style="text-align: left;margin-top:{{stateH}}px;height:{{stateH}}px;">
+  <navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack">
+    <text class="cuIcon-back text-gray" style="font-size:40rpx"></text>
+  </navigator>
+</view>
+
+
+  <view class="main-methods">
+      <view class="methods">
+          <view class="card-methods" style="margin-right: 5%;">
+              <navigator url="../schedule/schedule">
+                  <image class="methods-card-image" src="https://wx4.sinaimg.cn/mw690/006blzWmgy1g8irety6ufj30q60dbab8.jpg"></image>
+                  <view class="card-methods-title">
+                      <text>课程表</text>
+                  </view>
+              </navigator>
+          </view>
+          <view class="card-methods" style="margin-left: 5%;">
+              <navigator url="../grade/grade">
+                  <image class="methods-card-image" src="https://wx2.sinaimg.cn/mw690/006blzWmgy1g8itbaa43bj30vg0hrwlj.jpg"></image>
+                  <view class="card-methods-title">
+                      <text>期末成绩</text>
+                  </view>
+              </navigator>
+          </view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,815 @@
+[DEBUG][21-02-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-04][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-04][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-04][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-04][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-04][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-04][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1265053098.
+[DEBUG][21-02-04][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b672daa]
+[DEBUG][21-02-04][com.ender.dao.UserMapper.selectUserById]==>  Preparing: select u_id,u_username,u_password from user where u_id = ?
+[DEBUG][21-02-04][com.ender.dao.UserMapper.selectUserById]==> Parameters: 1(Integer)
+[DEBUG][21-02-04][com.ender.dao.UserMapper.selectUserById]<==      Total: 1
+[DEBUG][21-02-04][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b672daa]
+[DEBUG][21-02-04][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b672daa]
+[DEBUG][21-02-04][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1265053098 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 248710794.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@ed3068a]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT * FROM employee
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]<==      Total: 5
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@ed3068a]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@ed3068a]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 248710794 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 41092582.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27305e6]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT * FROM employee
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27305e6]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27305e6]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 41092582 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 519303080.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT id,name FROM employee e LEFT JOIN dept d on e.did = d.id
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 519303080 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 519303080.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT e.id eid, e.name ename,d,id did,d.name dname FROM employee e LEFT JOIN dept d on e.did = d.id
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 519303080 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 519303080.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT e.id eid, e.name ename, d.id did, d.name dname FROM employee e LEFT JOIN dept d on e.did = d.id
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 519303080 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 519303080.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT e.id eid, e.name ename, d.id did, d.name dname FROM employee e LEFT JOIN dept d on e.did = d.id
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]<==      Total: 5
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 519303080 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 519303080.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT e.id eid, e.name ename, d.id did, d.name dname FROM employee e LEFT JOIN dept d on e.did = d.id
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]<==      Total: 5
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1ef3efa8]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 519303080 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1547398254.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==>  Preparing: SELECT e.id eid, e.name ename,d,id did,d.name dname FROM employee e LEFT JOIN dept d on e.did = d.id where d.id = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==> Parameters: 1(Integer)
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1547398254 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1547398254.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==>  Preparing: SELECT e.id eid, e.name ename,d.id did,d.name dname FROM employee e LEFT JOIN dept d on e.did = d.id where d.id = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]<==      Total: 5
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1547398254 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1547398254.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==>  Preparing: SELECT e.id eid, e.name ename,d.id did,d.name dname FROM employee e LEFT JOIN dept d on e.did = d.id where d.id = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]<==      Total: 5
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1547398254 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1547398254.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==>  Preparing: SELECT e.id eid, e.name ename,d.id did,d.name dname FROM employee e LEFT JOIN dept d on e.did = d.id where e.id = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]<==      Total: 1
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5c3b6c6e]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1547398254 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1337829755.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4fbda97b]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==>  Preparing: SELECT id,name,did FROM employee WHERE id = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]<==      Total: 1
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4fbda97b]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4fbda97b]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1337829755 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1337829755.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4fbda97b]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==>  Preparing: SELECT id,name,did FROM employee WHERE id = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]==> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]====>  Preparing: SELECT id did,name FROM dept WHERE id = ?
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]====> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]<====      Total: 1
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesById]<==      Total: 1
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4fbda97b]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4fbda97b]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1337829755 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 300604602.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@11eadcba]
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==>  Preparing: SELECT d.id did,d.name dname,e.id eid,e.name ename FROM dept d LEFT JOIN employee e on d.id = e.did
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]<==      Total: 5
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@11eadcba]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@11eadcba]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 300604602 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==>  Preparing: SELECT id,name FROM dept
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====>  Preparing: SELECT id,name,did FROM employee WHERE did = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]<====      Total: 5
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]<==      Total: 1
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==>  Preparing: SELECT id,name FROM dept
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====>  Preparing: SELECT id,name,did FROM employee WHERE did = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]<====      Total: 5
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]<==      Total: 1
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==>  Preparing: SELECT d.id did,d.name dname,e.id eid,e.name ename FROM dept d LEFT JOIN employee e on d.id = e.did
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]<==      Total: 5
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==>  Preparing: SELECT id,name FROM dept
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====>  Preparing: SELECT id,name,did FROM employee WHERE did = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]<====      Total: 5
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]<==      Total: 1
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==>  Preparing: SELECT id,name FROM dept
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====>  Preparing: SELECT id,name,did FROM employee WHERE did = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]<====      Total: 5
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]<==      Total: 1
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==>  Preparing: SELECT id,name FROM dept
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====>  Preparing: SELECT id,name,did FROM employee WHERE did = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]<====      Total: 5
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]<==      Total: 1
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT id,name,did FROM employee
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]<==      Total: 5
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT id,name,did FROM employee
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]<==      Total: 6
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==>  Preparing: SELECT id,name,did FROM employee
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]====>  Preparing: SELECT id did,name FROM dept WHERE id = ?
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]====> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]<====      Total: 1
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]====>  Preparing: SELECT id did,name FROM dept WHERE id = ?
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]====> Parameters: 2(Integer)
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDeptById]<====      Total: 1
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployees]<==      Total: 6
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.
+[DEBUG][21-02-07][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VFS
+[DEBUG][21-02-07][org.apache.ibatis.io.JBoss6VFS]JBoss 6 VFS API is not available in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG][21-02-07][org.apache.ibatis.io.VFS]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Listing file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Admin.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Dept.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 a	  B	  C	  D E
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/Employee.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 [	  <	  =	  > ?
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Find JAR URL: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Not a JAR: file:/F:/JavaProject/mybatis-study/target/classes/com/ender/entity/User.class
+[DEBUG][21-02-07][org.apache.ibatis.io.DefaultVFS]Reader entry: ����   7 X	  9	  :	  ; <
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Admin matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Dept matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.Employee matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.io.ResolverUtil]Checking to see if class com.ender.entity.User matches criteria [is assignable to Object]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1193398802.
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==>  Preparing: SELECT id,name FROM dept
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]==> Parameters: 
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====>  Preparing: SELECT id,name,did FROM employee WHERE did = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====> Parameters: 1(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]<====      Total: 5
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====>  Preparing: SELECT id,name,did FROM employee WHERE did = ?
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]====> Parameters: 2(Integer)
+[DEBUG][21-02-07][com.ender.mapper.EmployeeMapper.findEmployeesByDid]<====      Total: 1
+[DEBUG][21-02-07][com.ender.mapper.DeptMapper.findDepts]<==      Total: 2
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4721d212]
+[DEBUG][21-02-07][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1193398802 to pool.

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.ender.miniapp.dao.GradeDao">
+
+    <resultMap type="top.ender.miniapp.entity.Grade" id="GradeMap">
+        <result property="gradeId" column="grade_id" jdbcType="INTEGER"/>
+        <result property="uId" column="u_id" jdbcType="VARCHAR"/>
+        <result property="gradeSum" column="grade_sum" jdbcType="DOUBLE"/>
+        <result property="dailyGrade" column="daily_grade" jdbcType="DOUBLE"/>
+        <result property="examGrade" column="exam_grade" jdbcType="DOUBLE"/>
+        <result property="examType" column="exam_type" jdbcType="VARCHAR"/>
+        <result property="gradeName" column="grade_name" jdbcType="VARCHAR"/>
+        <result property="gradeYear" column="grade_year" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="GradeMap">
+        select grade_id,
+               grade_sum,
+               daily_grade,
+               exam_grade
+        from miniapp.grade
+        where grade_id = #{gradeId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="GradeMap">
+        select grade_id,
+               u_id,
+               grade_sum,
+               daily_grade,
+               exam_grade,
+               exam_type,
+               grade_name,
+               grade_year
+        from miniapp.grade
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="GradeMap">
+        select
+        grade_id, u_id, grade_sum, daily_grade, exam_grade, exam_type, grade_name, grade_year
+        from miniapp.grade
+        <where>
+            <if test="gradeId != null">
+                and grade_id = #{gradeId}
+            </if>
+            <if test="uId != null">
+                and u_id = #{uId}
+            </if>
+            <if test="gradeSum != null and gradeSum != ''">
+                and grade_sum = #{gradeSum}
+            </if>
+            <if test="dailyGrade != null and dailyGrade != ''">
+                and daily_grade = #{dailyGrade}
+            </if>
+            <if test="examGrade != null and examGrade != ''">
+                and exam_grade = #{examGrade}
+            </if>
+            <if test="examType != null and examType != ''">
+                and exam_type = #{examType}
+            </if>
+            <if test="gradeName != null and gradeName != ''">
+                and grade_name = #{gradeName}
+            </if>
+            <if test="gradeYear != null and gradeYear != ''">
+                and grade_year = #{gradeYear}
+            </if>
+            <if test="classType != null and classType != ''">
+                and class_type = #{classType}
+            </if>
+            <if test="classCredit != null and classCredit != ''">
+                and class_credit = #{classCredit}
+            </if>
+        </where>
+    </select>
+    <select id="queryByUidAndTime" resultType="top.ender.miniapp.entity.Grade">
+        select grade_id,
+               grade_sum,
+               exam_type,
+               grade_name,
+               class_credit,
+               class_type
+        from miniapp.grade
+        where u_id = #{uId} and grade_year = #{gradeYear}
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="gradeId" useGeneratedKeys="true">
+        insert into miniapp.grade(u_id, grade_sum, daily_grade, exam_grade, exam_type, grade_name, grade_year,class_type,class_credit)
+        values (#{uId}, #{gradeSum}, #{dailyGrade}, #{examGrade}, #{examType}, #{gradeName}, #{gradeYear},#{classType},#{classCredit})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="gradeId" useGeneratedKeys="true">
+        insert into miniapp.grade(u_id, grade_sum, daily_grade, exam_grade, exam_type, grade_name, grade_year,class_type,class_credit)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.uId}, #{entity.gradeSum}, #{entity.dailyGrade}, #{entity.examGrade}, #{entity.examType},
+            #{entity.gradeName}, #{entity.gradeYear},#{entity.classType},#{entity.classCredit})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="gradeId" useGeneratedKeys="true">
+        insert into miniapp.grade(u_id, grade_sum, daily_grade, exam_grade, exam_type, grade_name, grade_year,class_type,class_credit)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.uId}, #{entity.gradeSum}, #{entity.dailyGrade}, #{entity.examGrade}, #{entity.examType},
+            #{entity.gradeName}, #{entity.gradeYear},#{entity.classType},#{entity.classCredit})
+        </foreach>
+        on duplicate key update
+        u_id = values(u_id) , grade_sum = values(grade_sum) , daily_grade = values(daily_grade) , exam_grade =
+        values(exam_grade) , exam_type = values(exam_type) , grade_name = values(grade_name) , grade_year =
+        values(grade_year)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update miniapp.grade
+        <set>
+            <if test="uId != null">
+                u_id = #{uId},
+            </if>
+            <if test="gradeSum != null and gradeSum != ''">
+                grade_sum = #{gradeSum},
+            </if>
+            <if test="dailyGrade != null and dailyGrade != ''">
+                daily_grade = #{dailyGrade},
+            </if>
+            <if test="examGrade != null and examGrade != ''">
+                exam_grade = #{examGrade},
+            </if>
+            <if test="examType != null and examType != ''">
+                exam_type = #{examType},
+            </if>
+            <if test="gradeName != null and gradeName != ''">
+                grade_name = #{gradeName},
+            </if>
+            <if test="gradeYear != null and gradeYear != ''">
+                grade_year = #{gradeYear},
+            </if>
+        </set>
+        where grade_id = #{gradeId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from miniapp.grade
+        where grade_id = #{gradeId}
+    </delete>
+
+</mapper>
+

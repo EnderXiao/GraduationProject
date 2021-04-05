@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.ender.miniapp.dao.StoreDao">
+
+    <resultMap type="top.ender.miniapp.entity.Store" id="StoreMap">
+        <result property="storeId" column="store_id" jdbcType="INTEGER"/>
+        <result property="storeName" column="store_name" jdbcType="VARCHAR"/>
+        <result property="creatTime" column="creat_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="StoreMap">
+        select store_id,
+               store_name,
+               creat_time
+        from miniapp.store
+        where store_id = #{storeId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="StoreMap">
+        select store_id,
+               store_name,
+               creat_time
+        from miniapp.store
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="StoreMap">
+        select
+        store_id, store_name, creat_time
+        from miniapp.store
+        <where>
+            <if test="storeId != null">
+                and store_id = #{storeId}
+            </if>
+            <if test="storeName != null and storeName != ''">
+                and store_name = #{storeName}
+            </if>
+            <if test="creatTime != null">
+                and creat_time = #{creatTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="storeId" useGeneratedKeys="true">
+        insert into miniapp.store(store_name, creat_time)
+        values (#{storeName}, #{creatTime})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="storeId" useGeneratedKeys="true">
+        insert into miniapp.store(store_name, creat_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.storeName}, #{entity.creatTime})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="storeId" useGeneratedKeys="true">
+        insert into miniapp.store(store_name, creat_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.storeName}, #{entity.creatTime})
+        </foreach>
+        on duplicate key update
+        store_name = values(store_name) , creat_time = values(creat_time)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update miniapp.store
+        <set>
+            <if test="storeName != null and storeName != ''">
+                store_name = #{storeName},
+            </if>
+            <if test="creatTime != null">
+                creat_time = #{creatTime},
+            </if>
+        </set>
+        where store_id = #{storeId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from miniapp.store
+        where store_id = #{storeId}
+    </delete>
+
+</mapper>
+

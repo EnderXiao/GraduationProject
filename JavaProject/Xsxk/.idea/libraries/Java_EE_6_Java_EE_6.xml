@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Java EE 6-Java EE 6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.transaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../201807031530610092715522/commons-beanutils-1.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../201807031530610092715522/commons-collections-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../201807031530610092715522/commons-lang-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../201807031530610092715522/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../201807031530610092715522/ezmorph-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../201807031530610092715522/json-lib-2.4-jdk15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JDBC/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

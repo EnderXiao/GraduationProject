@@ -1,0 +1,166 @@
+/* pages/education/grade/grade.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.global{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: inline-block;
+  background-image: linear-gradient(to bottom right,rgb(38,31,48),rgb(139,115,135));
+}
+.card{
+  height: 25%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 35rpx;
+  margin-bottom: 5%;
+  border-radius: 20rpx;
+}
+
+
+
+.card .card-image{
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx; 
+  position: relative;
+  box-shadow: 6px 6px 10px 0px rgb(38,31,48);
+}
+.card .main-card-image{
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx;
+}
+.card .card-content{
+  z-index: 1;
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: 20%;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background-color: rgb(144, 118, 139);
+  box-shadow: 6px 6px 10px 0px rgb(38,31,48);
+}
+.card .card-content .card-content-textblock{
+  margin-left: 10%;
+  margin-top: 3%;
+  font-size: 30rpx;
+  font-style: ‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
+  width: 80%;
+  height: 30%;
+  text-align: center;
+  padding-top: 3%;
+  box-shadow: 3px 3px 10px 0px rgb(38,31,48);
+  background-color: #F4A7B9;
+  border-radius: 20rpx;
+}
+
+.card-text-void{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: rgb(218, 119, 73);
+  font-size: 30rpx;
+}
+.cells{
+  margin-top: 20%;
+  height: 50%;
+  width: 100%;
+}
+
+.card-content-mini{
+  font-size: 30rpx;
+  position: relative;
+  z-index: 2;
+  width: 76%;
+  height: 42%;
+  margin-left:12%; 
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background-color: rgb(171, 152, 189);
+  display: inline-block
+}
+.card-mini{
+  position: relative;
+  z-index: 3;
+  height: 15%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 25rpx;
+  border-radius: 20rpx; 
+  color:black;
+  background-color: rgb(67, 56, 83);
+  box-shadow: 6px 6px 10px 0px rgb(38,31,48);
+}
+
+.table {
+  border: 0px solid darkgray;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.table picker{
+  height: 100%;
+  width: 100%;
+  text-align:center;
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+.tr-f {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.th {
+  font-size: 40rpx;
+  color: rgb(139, 114, 136);
+  font-weight: bolder;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.td{
+  color: rgb(86, 66, 112);
+  overflow : hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.pickerYear{
+  color: rgb(139, 114, 136);
+  border-radius: 10rpx;
+  background-image: linear-gradient(to bottom right,rgb(67, 56, 83),rgb(123, 91, 172));
+}
+
+.my-btn{
+  width: 60%;
+  height: 80%;
+  padding: 1%;
+  margin: 0 20% 2% 20%;
+  background-color: rgb(38,31,48);
+  color: rgb(139,115,135);
+  font-size: 13px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  display: block;
+  z-index: 0;
+  box-shadow: 2px 2px 5px 0px rgb(38,31,48);
+  line-height: 35rpx;
+}

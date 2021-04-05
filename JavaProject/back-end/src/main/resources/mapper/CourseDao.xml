@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.ender.miniapp.dao.CourseDao">
+
+    <resultMap type="top.ender.miniapp.entity.Course" id="CourseMap">
+        <result property="courseId" column="course_id" jdbcType="INTEGER"/>
+        <result property="courseName" column="course_name" jdbcType="VARCHAR"/>
+        <result property="classesId" column="classes_id" jdbcType="INTEGER"/>
+        <result property="weekNo" column="week_no" jdbcType="INTEGER"/>
+        <result property="weekEnd" column="week_end" jdbcType="INTEGER"/>
+        <result property="weekDay" column="week_day" jdbcType="INTEGER"/>
+        <result property="courseNo" column="course_no" jdbcType="INTEGER"/>
+        <result property="classRoomId" column="class_room_id" jdbcType="INTEGER"/>
+    </resultMap>
+    <resultMap id="CourseClassRoom" type="top.ender.miniapp.entity.Course">
+        <id property="courseId" column="course_id"/>
+        <result property="courseName" column="course_name" jdbcType="VARCHAR"/>
+        <result property="classesId" column="classes_id" jdbcType="INTEGER"/>
+        <result property="weekNo" column="week_no" jdbcType="INTEGER"/>
+        <result property="weekEnd" column="week_end" jdbcType="INTEGER"/>
+        <result property="weekDay" column="week_day" jdbcType="INTEGER"/>
+        <result property="courseNo" column="course_no" jdbcType="INTEGER"/>
+        <result property="classRoomId" column="class_room_id" jdbcType="INTEGER"/>
+        <association property="classroom" javaType="top.ender.miniapp.entity.Classroom">
+            <result property="classRoomId" column="class_room_id" jdbcType="INTEGER"/>
+            <result property="classRoomNo" column="class_room_no" jdbcType="INTEGER"/>
+            <result property="classBuilding" column="class_building" jdbcType="VARCHAR"/>
+            <result property="areaName" column="area_name" jdbcType="VARCHAR"/>
+        </association>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="CourseMap">
+        select course_id,
+               course_name,
+               classes_id,
+               week_no,
+               week_end,
+               week_day,
+               course_no,
+               class_room_id
+        from miniapp.course
+        where course_id = #{courseId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="CourseMap">
+        select course_id,
+               course_name,
+               classes_id,
+               week_no,
+               week_end,
+               week_day,
+               course_no,
+               class_room_id
+        from miniapp.course
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="CourseMap">
+        select
+        course_id, course_name, classes_id, week_no, week_day, course_no, class_room_id
+        from miniapp.course
+        <where>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="courseName != null and courseName != ''">
+                and course_name = #{courseName}
+            </if>
+            <if test="classesId != null">
+                and classes_id = #{classesId}
+            </if>
+            <if test="weekNo != null">
+                and week_no = #{weekNo}
+            </if>
+            <if test="weekDay != null">
+                and week_day = #{weekDay}
+            </if>
+            <if test="courseNo != null">
+                and course_no = #{courseNo}
+            </if>
+            <if test="classRoomId != null">
+                and class_room_id = #{classRoomId}
+            </if>
+            <if test="weekEnd != null">
+                and week_end = #{weekEnd}
+            </if>
+        </where>
+    </select>
+    <select id="queryByClass" resultMap="CourseClassRoom">
+        select c1.course_id,
+               c1.course_name,
+               c1.classes_id,
+               c1.week_no,
+               c1.week_end,
+               c1.week_day,
+               c1.course_no,
+               c1.class_room_id,
+               c2.area_name,
+               c2.class_building,
+               c2.class_room_no,
+               c2.class_room_id
+        from miniapp.course c1
+        left join classroom c2 on c1.class_room_id = c2.class_room_id
+        where classes_id = #{classId} and c1.week_no = #{week} order by course_no,week_day
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="courseId" useGeneratedKeys="true">
+        insert into miniapp.course(course_name, classes_id, week_no, week_day, course_no, class_room_id,week_end)
+        values (#{courseName}, #{classesId}, #{weekNo}, #{weekDay}, #{courseNo}, #{classRoomId},#{weekEnd})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="courseId" useGeneratedKeys="true">
+        insert into miniapp.course(course_name, classes_id, week_no, week_day, course_no, class_room_id,week_end)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.courseName}, #{entity.classesId}, #{entity.weekNo}, #{entity.weekDay}, #{entity.courseNo},
+            #{entity.classRoomId},#{entity.weekEnd})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="courseId" useGeneratedKeys="true">
+        insert into miniapp.course(course_name, classes_id, week_no, week_day, course_no, class_room_id,week_end)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.courseName}, #{entity.classesId}, #{entity.weekNo}, #{entity.weekDay}, #{entity.courseNo},
+            #{entity.classRoomId},#{entity.weekEnd})
+        </foreach>
+        on duplicate key update
+        course_name = values(course_name) , classes_id = values(classes_id) , week_no = values(week_no) , week_day =
+        values(week_day) , course_no = values(course_no) , class_room_id = values(class_room_id), week_end = values(week_end)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update miniapp.course
+        <set>
+            <if test="courseName != null and courseName != ''">
+                course_name = #{courseName},
+            </if>
+            <if test="classesId != null">
+                classes_id = #{classesId},
+            </if>
+            <if test="weekNo != null">
+                week_no = #{weekNo},
+            </if>
+            <if test="weekDay != null">
+                week_day = #{weekDay},
+            </if>
+            <if test="courseNo != null">
+                course_no = #{courseNo},
+            </if>
+            <if test="classRoomId != null">
+                class_room_id = #{classRoomId},
+            </if>
+            <if test="weekEnd != null">
+                week_end = #{weekEnd},
+            </if>
+        </set>
+        where course_id = #{courseId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from miniapp.course
+        where course_id = #{courseId}
+    </delete>
+
+</mapper>
+

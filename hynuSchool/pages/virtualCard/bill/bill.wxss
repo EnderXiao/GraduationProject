@@ -1,0 +1,118 @@
+/* pages/virtualCard/bill/bill.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.global{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  display: inline-block;
+  background-image: linear-gradient(to bottom right,#7DB9DE,#d3dee2);
+}
+
+.card{
+  display: inline-block;
+  height: 90%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50rpx;
+  margin-bottom: 5%;
+  border-radius: 20rpx; 
+  color:black;
+  box-shadow: 6px 6px 10px 0px #7DB9DE;
+}
+.card .card-image{
+  height: 20%;
+  width: 100%;
+  border-radius: 20rpx; 
+  position: relative;
+}
+.card .main-card-image{
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 0; 
+  border-bottom-left-radius: 0; 
+  border-top-right-radius: 20rpx; 
+  border-top-left-radius: 20rpx;
+}
+
+.card .card-image .ctitle{
+  display:flex;
+  bottom: 0;
+  justify-items: center;
+  align-items: center;
+  margin-top: 25%;
+  font-weight: bolder;
+  position: absolute;
+  height: 38%;
+  width: 100%;
+  color:snow;
+  font-size: 50rpx;
+}
+.ctitle .picker{
+  padding: 0 10rpx;
+  display: inline;
+  font-weight: bolder;
+  background-image: linear-gradient(to bottom right,rgb(92, 47, 64),rgb(245, 95, 95));
+  border-radius: 20rpx;
+}
+.card .card-content{
+  width: 100%;
+  height: 80%;
+  padding: 2%;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background-color: rgb(211, 222, 226);
+  display: inline-block
+}
+.card .card-content .card-content-textblock{
+  line-height: 1rem;
+  position: relative;
+  margin-left: 2%;
+  margin-top: 3%;
+  width: 96%;
+  height: 9%;
+  box-shadow: 3px 3px 10px 0px #58B2DC;
+  background-color: #7DB9DE;
+  border-radius: 20rpx;
+}
+.card-content-textblock .state-image{
+  height: 117%;
+}
+.card-text-void{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: #2E5C6E;
+  font-size: 30rpx;
+}
+
+.table {
+  border: 0px solid darkgray;
+  width: 100%;
+  height: 100%;
+
+
+}
+.tr-f {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.td {
+    color: #2E5C6E;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    justify-content: center;
+}
+.td-image{
+    width: 20%;
+    height: 50%;
+    justify-content: center;
+}

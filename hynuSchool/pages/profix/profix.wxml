@@ -1,0 +1,36 @@
+<!--pages/profix/profix.wxml-->
+<view class="global">
+    <view style="margin-top:{{stateH}}px;height:{{stateH}}px;width 5%">
+        <navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack">
+            <text class="cuIcon-back" style="font-size:40rpx"></text>
+        </navigator>
+    </view>
+
+    <view class="card">
+        <view class="card-image" style="z-index:6">
+            <image class="main-card-image" mode="aspectFill" src="https://wx1.sinaimg.cn/mw690/006blzWmgy1g83qs2qyagj30vk0hsh1p.jpg"></image>
+            <view class="bg-shadeBottom ctitle" style="z-index:7">
+                <text style="text-align:left;padding-left:2%">{{name}}</text>
+                <text style="text-align:right;margin-left:50%">{{id}}</text>
+            </view>
+        </view>
+
+        <view class="card-content animated slideInDown" style=";z-index:5;width: 95%;margin-left: 2.5%;">
+          <view class="card-content-textblock" style="background-color:rgb(146,172,209)" bindtap="change">
+              <text>修改密码</text>
+          </view>
+        </view>
+
+
+        <view class="card-content animated slideInDown" style="z-index:4;width: 90%;margin-left: 5%;">
+          <view class="card-content-textblock" style="background-color:rgb(105,100,123)" bindtap="aboutus">
+              <text>关于我们</text>
+          </view>
+        </view>
+        
+        <form bindtap="logout">
+            <button type="submit" class="card-button animated slideInDown">退出登陆</button>
+        </form>
+    </view>
+
+</view>

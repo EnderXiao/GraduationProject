@@ -1,0 +1,106 @@
+<!--pages/profix/change/change.wxml-->
+<view class="global">
+  <view style="margin-top:{{stateH}}px;height:{{stateH}}px;width 5%">
+    <navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack"><text class="cuIcon-back" style="font-size:40rpx"></text></navigator>
+  </view>
+
+
+   <swiper style="height:90%;width:100%;" indicator-dots indicator-color="rgb(169, 151, 233)" indicator-active-color="rgb(105,100,123)">
+
+    <swiper-item>
+      <view class="card">
+        <view class="card-image">
+          <image class="main-card-image" src="https://wx1.sinaimg.cn/mw690/006blzWmgy1g83qs2qyagj30vk0hsh1p.jpg" mode="aspectFill"></image>
+          <view class="ctitle">
+            <text>
+              修改查询密码\n
+              (用于账户查询)
+            </text>
+          </view>
+        </view>
+
+        <view class="card-content">
+          <form bindsubmit="changep1">
+            <view class="card-content-textblock">
+
+              <view class="card-content-title">
+                输入当前密码：
+              </view>
+              <input type="number" name='oldpassword' maxlength="6">
+              </input>
+            </view>
+
+            <view class="card-content-textblock">
+
+              <view class="card-content-title">
+                输入新密码：
+              </view>
+              <input type="number" name='newpassword' maxlength="6">
+              </input>
+            </view>
+
+            <view class="card-content-textblock">
+              <view class="card-content-title">
+                再次输入新密码：
+              </view>
+              <input type="number" name='newpassword2' maxlength="6">
+              </input>
+            </view>
+
+            <button form-type='submit' type="submit" class="card-button" style="animation-delay:0.4s;">提交</button>
+          </form>
+        </view>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view class="card">
+        <view class="card-image">
+          <image class="main-card-image" src="https://wx1.sinaimg.cn/mw690/006blzWmgy1g83qs2qyagj30vk0hsh1p.jpg" mode="aspectFill"></image>
+          <view class="ctitle">
+            <text>
+              修改交易密码\n
+              (用于交易支付)
+            </text>
+          </view>
+        </view>
+
+        <view class="card-content">
+          <form bindsubmit="changep2">
+            <view class="card-content-textblock">
+
+              <view class="card-content-title">
+                输入当前密码：
+              </view>
+              <input type="number" name='oldpassword' maxlength="6">
+              </input>
+            </view>
+
+            <view class="card-content-textblock">
+
+              <view class="card-content-title">
+                输入新密码：
+              </view>
+              <input type="number" name='newpassword' maxlength="6">
+              </input>
+            </view>
+
+            <view class="card-content-textblock">
+              <view class="card-content-title">
+                再次输入新密码：
+              </view>
+              <input type="number" name='newpassword2' maxlength="6">
+              </input>
+            </view>
+
+            <button form-type='submit' type="submit" class="card-button" style="animation-delay:0.4s;">提交</button>
+          </form>
+        </view>
+      </view>
+    </swiper-item>
+
+   </swiper>
+
+
+</view>
+

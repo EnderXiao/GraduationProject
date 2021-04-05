@@ -1,0 +1,108 @@
+/* pages/virtualCard/charge/charge.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+}
+.global{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: inline-block;
+  background-image: linear-gradient(to bottom right,rgb(233,158,124),rgb(255, 205, 149));
+}
+.card{
+  height: 75%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50rpx;
+  margin-bottom: 5%;
+  border-radius: 20rpx; 
+  color:black;
+  box-shadow: 6px 6px 10px 0px #FB9966;
+}
+.card .card-image{
+  height: 50%;
+  width: 100%;
+  border-radius: 20rpx; 
+  position: relative;
+}
+.card .main-card-image{
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 0; 
+  border-bottom-left-radius: 0; 
+  border-top-right-radius: 20rpx; 
+  border-top-left-radius: 20rpx; 
+}
+.card .card-image .ctitle{
+  font-size: 40rpx; 
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.card .card-content{
+  width: 100%;
+  height: 50%;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background-color: rgb(255, 185, 139);
+  display: inline-block
+}
+.card .card-content .card-content-textblock{
+  margin-left: 5%;
+  margin-top: 3%;
+  font-size: 30rpx;
+  width: 90%;
+  height: 22%;
+  text-align: center;
+  padding-top: 1%;
+  box-shadow: 3px 3px 10px 0px rgb(255, 153, 98);
+  background-color: rgb(240, 156, 123);
+  border-radius: 20rpx;
+}
+.card .card-content .card-content-title{
+  font-size: 30rpx;
+}
+
+
+
+.card-button {
+  font-size: 30rpx !important;
+  margin-left: 35%;
+  color: black;
+  background-color: rgb(240, 156, 123);
+  border-radius: 30rpx;
+  width: 35% !important;
+  height: 15%;
+  box-shadow: 3px 3px 10px 0px rgb(255, 153, 98);
+  margin-top: 3%;
+}
+
+
+input {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 90%;
+    height: 5%;
+    background-color: rgb(245, 194, 174);
+    border:1rpx rgb(245, 194, 174) solid;
+    border-radius: 25rpx;
+
+}
+
+.bank {
+    /* background-image: url(../1.jpg); */
+    background-color: rgb(245, 194, 174);
+    position: relative;
+    margin-left: 5%;
+    margin-top:2%;
+    border-radius: 10rpx;
+    text-align: center;
+    font-size: 30rpx;
+    width: 90%;
+    height: 35%;
+}

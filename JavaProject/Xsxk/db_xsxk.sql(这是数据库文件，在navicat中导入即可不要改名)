@@ -1,0 +1,141 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : mysql
+Source Server Version : 50505
+Source Host           : localhost:3306
+Source Database       : db_xsxk
+
+Target Server Type    : MYSQL
+Target Server Version : 50505
+File Encoding         : 65001
+
+Date: 2019-11-07 16:08:14
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `t_course`
+-- ----------------------------
+DROP TABLE IF EXISTS `t_course`;
+CREATE TABLE `t_course` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `courseName` varchar(40) DEFAULT NULL,
+  `credit` int(11) DEFAULT NULL,
+  `teacherId` int(11) DEFAULT NULL,
+  `isxuan` int(2) DEFAULT NULL,
+  `coursetime` int(2) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_t_course` (`teacherId`),
+  CONSTRAINT `FK_t_course` FOREIGN KEY (`teacherId`) REFERENCES `t_teacher` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_course
+-- ----------------------------
+INSERT INTO `t_course` VALUES ('1', '数据结构和算法(周一上午8:00-9:30)', '5', '1', '0', '1');
+INSERT INTO `t_course` VALUES ('2', '操作系统原理(周一上午10:00-12:00)', '3', '2', '0', '2');
+INSERT INTO `t_course` VALUES ('3', '音乐鉴赏(周三下午3:00-4;00)', '2', '3', '1', '11');
+INSERT INTO `t_course` VALUES ('4', 'C语言基础(周三下午5:00-6:30)', '4', '2', '0', '12');
+INSERT INTO `t_course` VALUES ('5', '编译原理(周五上午10:00-12:00)', '5', '5', '0', '18');
+INSERT INTO `t_course` VALUES ('6', '计算机图形学(周五上午10:00-12:00)', '2', '5', '1', '18');
+INSERT INTO `t_course` VALUES ('7', '离散数学(周二上午8:00-9:30)', '4', '2', '0', '3');
+INSERT INTO `t_course` VALUES ('8', '大学英语(周二下午3:00-4:00)', '4', '6', '0', '4');
+INSERT INTO `t_course` VALUES ('9', '体育(周四上午8:00-9:30)', '1', '4', '0', '7');
+INSERT INTO `t_course` VALUES ('10', 'Java程序设计(周二上午10:00-12:00)', '3', '2', '0', '6');
+INSERT INTO `t_course` VALUES ('11', '编译原理(周五下午5:00-6:30)', '4', '1', '0', '20');
+
+-- ----------------------------
+-- Table structure for `t_manager`
+-- ----------------------------
+DROP TABLE IF EXISTS `t_manager`;
+CREATE TABLE `t_manager` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userName` varchar(20) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `trueName` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_manager
+-- ----------------------------
+INSERT INTO `t_manager` VALUES ('1', 'admin', '123', '王大锤');
+
+-- ----------------------------
+-- Table structure for `t_student`
+-- ----------------------------
+DROP TABLE IF EXISTS `t_student`;
+CREATE TABLE `t_student` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userName` varchar(20) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `trueName` varchar(20) DEFAULT NULL,
+  `stuNo` varchar(20) DEFAULT NULL,
+  `professional` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_student
+-- ----------------------------
+INSERT INTO `t_student` VALUES ('1', 'jack', '123', '张三', '001', '计算机');
+INSERT INTO `t_student` VALUES ('2', 'john', '123', '李四', '002', '计算机');
+INSERT INTO `t_student` VALUES ('5', 'dsfdf', '123', 'rtre', '004', 'reyrety');
+INSERT INTO `t_student` VALUES ('7', 'ejhk', '123', 'iorqwyo', '007', 'qwkjlrh k');
+
+-- ----------------------------
+-- Table structure for `t_student_course`
+-- ----------------------------
+DROP TABLE IF EXISTS `t_student_course`;
+CREATE TABLE `t_student_course` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `studentId` int(11) DEFAULT NULL,
+  `courseId` int(11) DEFAULT NULL,
+  `score` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_t_student_course` (`courseId`),
+  KEY `FK_t_student_course2` (`studentId`),
+  CONSTRAINT `FK_t_student_course` FOREIGN KEY (`courseId`) REFERENCES `t_course` (`id`),
+  CONSTRAINT `FK_t_student_course2` FOREIGN KEY (`studentId`) REFERENCES `t_student` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_student_course
+-- ----------------------------
+INSERT INTO `t_student_course` VALUES ('2', '2', '1', '33');
+INSERT INTO `t_student_course` VALUES ('8', '1', '1', '20');
+INSERT INTO `t_student_course` VALUES ('9', '1', '2', null);
+INSERT INTO `t_student_course` VALUES ('11', '1', '10', null);
+INSERT INTO `t_student_course` VALUES ('12', '2', '2', null);
+INSERT INTO `t_student_course` VALUES ('13', '2', '4', null);
+INSERT INTO `t_student_course` VALUES ('14', '2', '3', null);
+INSERT INTO `t_student_course` VALUES ('15', '2', '6', null);
+INSERT INTO `t_student_course` VALUES ('16', '1', '7', null);
+INSERT INTO `t_student_course` VALUES ('29', '1', '4', null);
+INSERT INTO `t_student_course` VALUES ('33', '1', '11', null);
+INSERT INTO `t_student_course` VALUES ('34', '1', '9', null);
+
+-- ----------------------------
+-- Table structure for `t_teacher`
+-- ----------------------------
+DROP TABLE IF EXISTS `t_teacher`;
+CREATE TABLE `t_teacher` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userName` varchar(20) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `trueName` varchar(20) DEFAULT NULL,
+  `title` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_teacher
+-- ----------------------------
+INSERT INTO `t_teacher` VALUES ('1', 'marry', '123', '张丽', '中级讲师');
+INSERT INTO `t_teacher` VALUES ('2', 'jack', '123', '王大', '初级讲师');
+INSERT INTO `t_teacher` VALUES ('3', 'music', '123', '张信哲', '教授');
+INSERT INTO `t_teacher` VALUES ('4', 'Bob', '123', '刘翔', '教授');
+INSERT INTO `t_teacher` VALUES ('5', 'json', '112', '好先生2', '高级讲师2');
+INSERT INTO `t_teacher` VALUES ('6', 'James', '123', '李阳', '教授');

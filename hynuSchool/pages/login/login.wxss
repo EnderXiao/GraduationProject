@@ -1,0 +1,111 @@
+/* pages/logIn/login.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.global{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: inline-block;
+  background-image: linear-gradient(to bottom right,#00896C,#B5CAA0);
+}
+.card{
+  height: 50%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30%;
+  margin-bottom: 5%;
+  border-radius: 20rpx; 
+  color:black;
+}
+.card .card-image{
+  z-index: 2;
+  height: 60%;
+  width: 100%;
+  border-radius: 20rpx; 
+  position: relative;
+  box-shadow: 6px 6px 10px 0px #00896C;
+}
+.card .main-card-image{
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx; 
+
+}
+.card .card-content{
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 40%;
+
+}
+.card .card-content .card-content-main{
+  width: 80%;
+  height: 100%;
+  margin-left: 8%;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background-color: #A8D8B9;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  box-shadow: 6px 6px 10px 0px #00896C;
+
+}
+.card .card-content .card-content-textblock{
+  margin-left: 10%;
+  margin-top: 3%;
+  font-style: ‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
+  width: 80%;
+  height: 40%;
+  text-align: left;
+}
+.card .card-content .card-content-tag{
+  z-index: 0;
+  position: relative;
+  display: inline-block;
+  width: 12%;
+  height: 50%;
+}
+.input-title{
+  font-size: 35rpx;
+  display: inline-block;
+}
+input{
+  width:100%;
+  text-align: left;
+  margin-top: 3rpx;
+  border-bottom: 1rpx black solid;
+}
+.card-button{
+  z-index: 0; 
+  position: relative;
+  width: 100% !important; 
+  height: 100%;
+  border-radius: 0 25rpx 25rpx 0;
+  writing-mode: vertical-lr;
+  letter-spacing:5px;
+  padding-left: 10% !important;
+  font-size: 30rpx !important;
+  text-align: center;
+  background-color: #5DAC81;
+  color:#FCFAF2;
+  font-weight: bolder !important;
+  display: inline-block;
+  box-shadow: 6px 6px 10px 0px #00896C;
+}
+
+
+.card .slogan{
+  padding-top: 20%;
+  width: 100%;
+  height: 20%;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 2px rgb(16, 73, 56);
+  color: #227D51;
+}

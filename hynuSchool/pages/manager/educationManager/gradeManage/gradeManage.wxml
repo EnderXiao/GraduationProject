@@ -1,0 +1,152 @@
+<!--pages/manager/educationManager/gradeManage/gradeManage.wxml-->
+<!--pages/manager/educationManager/courseManage/courseManage.wxml-->
+<view class="global">
+	<view style="margin-top:{{stateH}}px;height:{{stateH}}px;width 5%">
+		<navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack">
+			<text class="cuIcon-back text-gray" style="font-size:40rpx"></text>
+		</navigator>
+	</view>
+	<view class="card">
+		<view class="card-image">
+			<image class="main-card-image" src="https://wx1.sinaimg.cn/mw690/ed9cb6cagy1gd8snq9v23j21400u00zw.jpg"
+				mode="aspectFill"></image>
+			<view class="ctitle">
+				<text>成绩管理</text>
+			</view>
+		</view>
+
+		<view class="card-content">
+			<view class="table" style="marigin-top:3%;">
+				<view class="tr-f" style="height:100%">
+					<view class="th">
+						<label>学号</label>
+						<input id="No" bindinput="noInput" type="number" maxlength="10"></input>
+					</view>
+					<view class="th">
+						<label>课程</label>
+						<input id="name" bindinput="nameInput" type="text" maxlength="10"></input>
+					</view>
+				</view>
+			</view>
+			<button id="rank" class="my-btn" bindtap="findGrade">查询</button>
+		</view>
+	</view>
+	<view class="cells">
+		<swiper bindchange="swiperChange" indicator-dots indicator-color="#9B90C2" indicator-active-color="#3f486f">
+			<swiper-item>
+				<view class="userTable">
+					<view class="userTh">
+						<view class="userTd">
+							<switch bindchange="selectAll" checked="{{selectAll}}"></switch>
+						</view>
+						<view class="userTd">学号</view>
+            <view class="userTd">课程</view>
+            <view class="userTd">总成绩</view>
+            <view class="userTd">时间</view>
+					</view>
+					<block wx:for="{{memberList}}" wx:for-index="id" wx:for-item="item" wx:key="id">
+						<view class="userTr">
+							<view class="userTd">
+								<switch id="{{id}}" wx:if="{{item.checked != null}}" checked="{{item.checked}}" bindchange="selectOne"></switch>
+							</view>
+							<view class="userTd">{{item.userId}}</view>
+              <view class="userTd">{{item.gradeName}}</view>
+              <view class="userTd">{{item.gradeSum}}</view>
+              <view class="userTd">{{item.gradeYear}}</view>
+						</view>
+					</block>
+					<view class="userTr">
+						<view class="userTd">
+							<button class="my-btn2" bindtap="previous">上一页</button>
+						</view>
+						<view class="userTd">
+            </view>
+            <view class="userTd">
+              <button class="my-btn2" bindtap="delete">删除</button>
+            </view>
+						<view class="userTd">
+						</view>
+						<view class="userTd">
+							<button class="my-btn2" bindtap="next">下一页</button>
+						</view>
+					</view>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<form bindsubmit='addGrade'>
+					<view class="userTable">
+						<view class="userTh">
+							<view class="userTd">添加成绩</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">学号</view>
+							<view class="userTd">
+								<input type="number" name='userId' maxlength="10">
+								</input>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">课程名</view>
+							<view class="userTd">
+								<input type="text" name='gradeName' maxlength="10">
+								</input>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">平时成绩</view>
+							<view class="userTd">
+                <input type="number" name='dailyGrade' maxlength="20">
+								</input>
+              </view>
+            </view>
+            <view class="userTr">
+              <view class="userTd">考试成绩</view>
+              <view class="userTd">
+                <input type="number" name='examGrade' maxlength="20">
+								</input>
+              </view>
+            </view>
+						<view class="userTr">
+							<view class="userTd">考试类型</view>
+							<view class="userTd">
+								<picker bindchange="pickerExamTypeChange" range="{{examType}}" value="{{examTypeIndex}}">
+									<text class="picker">{{examType[examTypeIndex]}}</text>
+								</picker>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">考试时间</view>
+							<view class="userTd">
+								<picker bindchange="pickerGradeYearChange" range="{{gradeYear}}" value="{{gradeYearIndex}}">
+									<text class="picker">{{gradeYear[gradeYearIndex]}}</text>
+								</picker>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">课程类型</view>
+							<view class="userTd">
+								<picker bindchange="pickerClassTypeChange" range="{{classType}}" value="{{classTypeIndex}}">
+									<text class="picker">{{classType[classTypeIndex]}}</text>
+								</picker>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">学分</view>
+							<view class="userTd">
+                <input type="number" name='credit' maxlength="20">
+								</input>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd"></view>
+							<view class="userTd">
+								<button class="my-btn2" type="submit" form-type="submit">添加</button>
+							</view>
+						</view>
+					</view>
+				</form>
+			</swiper-item>
+		</swiper>
+	</view>
+</view>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--对xml的约束-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 1.0//EN"
+        "http://mybatis.org/schema/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--使用jdbc的getGeneratedKeys获取数据库自增主键值-->
+        <setting name="useGeneratedKeys" value="true"/>
+
+        <!--使用标签替换列别名-->
+        <setting name="useColumnLabel" value="true"/>
+        
+        <!--驼峰命名转化-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <typeAliases>
+        <package name="top.ender.miniapp.entity"/>
+    </typeAliases>
+</configuration>

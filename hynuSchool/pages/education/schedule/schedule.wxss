@@ -1,0 +1,251 @@
+/* pages/education/schedule/schedule.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.global {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  display: inline-block;
+  background-image: linear-gradient(to bottom right, rgb(25, 43, 57), rgb(75, 96, 115));
+}
+
+.card {
+  display: inline-block;
+  height: 85%;
+  width: 85%;
+  margin-left: 7.5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 20rpx;
+  color: black;
+}
+
+.card .card-image {
+  z-index: 1;
+  height: 20%;
+  width: 100%;
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.card .main-card-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx;
+  box-shadow: 3px 3px 10px 0px rgb(36, 46, 56);
+}
+
+.card .card-content {
+  line-height: 20rpx;
+  width: 95%;
+  height: 78%;
+  margin-left: 2.5%;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background-color: rgb(100, 119, 134);
+  box-shadow: 3px 3px 10px 0px rgb(36, 46, 56);
+}
+
+.card .card-image .ctitle {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  font-weight: bolder;
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  color: snow;
+  font-size: 50rpx;
+}
+
+.card-image .cweek{
+  
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  font-weight: bolder;
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  color: snow;
+  font-size: 40rpx;
+}
+.card-image .cday {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  font-weight: bolder;
+  margin-top: 25%;
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  color: snow;
+  font-size: 25rpx;
+}
+
+.card .card-content .card-content-textblock {
+  text-align: center;
+  position: relative;
+  margin-left: 15%;
+  margin-top: 3%;
+  padding-top: 2%;
+  width: 70%;
+  height: 35%;
+  box-shadow: 3px 3px 10px 0px rgb(36, 46, 56);
+  background-color: rgb(63, 72, 111);
+  font-weight: bolder;
+  color: #9b90c2;
+  border-radius: 45rpx;
+  font-size: 40rpx;
+}
+
+.card .card-content .ttitle {
+  padding-top: 5%;
+  text-align: center;
+  padding-left: 20rpx;
+  height: 40%;
+  width: 100%;
+  color: rgb(116, 45, 18);
+  font-size: 50rpx;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.table {
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+}
+
+.tr {
+  margin-top: 10rpx;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 7rem;
+  align-items: center;
+}
+
+.tr-f {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 1.5rem;
+  align-items: center;
+}
+
+.tr-day {
+  margin-top: 5rpx;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 20%;
+  align-items: center;
+}
+
+.td {
+overflow : hidden;
+text-overflow: ellipsis;
+margin-right: 7rpx;
+line-height: 1rem;
+padding-top: 10rpx;
+color: rgb(203, 210, 214);
+height: 100%;
+width: 13%;
+justify-content: center;
+text-align: left;
+}
+
+.td-f {
+  margin-top: 3prx;
+  padding-top: 3rpx;
+  height: 100%;
+  width: 10%;
+  justify-content: center;
+  text-align: left;
+}
+
+.td-day {
+  margin-right: 5rpx;
+  line-height: 1rem;
+  padding-top: 3rpx;
+  height: 100%;
+  width: 15%;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2rpx;
+}
+
+.th {
+  width: 30%;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  height: 1.5rem;
+  align-items: center;
+}
+
+.th-f {
+  width: 10%;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  height: 1.5rem;
+  align-items: center;
+}
+
+.haveClass {
+  border-radius: 10rpx;
+  background-color: rgb(59, 78, 95);
+  box-shadow: 0px 0px 3px 0px rgb(36, 46, 56);
+  font-size: 30rpx;
+}
+
+.today {
+  border-radius: 20rpx;
+  /* background-color: rgb(106, 85, 86); */
+  background-image: linear-gradient(to bottom right, rgb(155, 88, 68), rgb(102, 88, 96));
+}
+
+.pickerWeek{
+border-radius: 25rpx;
+background-image: linear-gradient(to bottom right, rgb(155, 88, 68), rgb(102, 88, 96)); 
+}
+
+.card .slogan {
+  padding-top: 20%;
+  width: 100%;
+  height: 20%;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgb(25, 43, 57);
+  color: #9b90c2;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  padding: 1%;
+  text-align: right;
+  font-size: 25px;
+}
+
+input{
+  display: inline-flex;
+  margin: 2%;
+  width: 35%;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid gray;
+}

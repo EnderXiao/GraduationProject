@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.ender.miniapp.dao.ConsumptionDao">
+
+    <resultMap type="top.ender.miniapp.entity.Consumption" id="ConsumptionMap">
+        <result property="cspId" column="csp_id" jdbcType="INTEGER"/>
+        <result property="cspMoney" column="csp_money" jdbcType="NUMERIC"/>
+        <result property="storeId" column="store_id" jdbcType="INTEGER"/>
+        <result property="cspDate" column="csp_date" jdbcType="TIMESTAMP"/>
+        <result property="uId" column="u_id" jdbcType="VARCHAR"/>
+        <result property="cspStatus" column="csp_status" jdbcType="INTEGER"/>
+        <result property="cspTime" column="csp_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <resultMap id="ConsumptionStore" type="top.ender.miniapp.entity.Consumption">
+        <!--起别名后需要设置映射关系-->
+<!--        csp.csp_id capCspId,-->
+<!--        csp.csp_money cspCspMoney,-->
+<!--        csp.store_id cspStoreId,-->
+<!--        csp.csp_date cspCspDate,-->
+<!--        csp.u_id capCspUId,-->
+<!--        csp.csp_status cspCspStatus,-->
+<!--        csp.csp_time capCspTime-->
+        <id property="cspId" column="capCspId" />
+        <result property="cspDate" column="cspCspDate" />
+        <result property="cspMoney" column="cspCspMoney"/>
+        <result property="cspStatus" column="cspCspStatus"/>
+        <result property="cspTime" column="capCspTime"/>
+        <result property="storeId" column="cspStoreId"/>
+        <result property="uId" column="capCspUId"/>
+        <!--指定包含类的映射关系-->
+        <association property="store" javaType="top.ender.miniapp.entity.Store">
+            <id property="storeId" column="sId" />
+            <result property="storeName" column="sName" />
+            <result property="creatTime" column="sCreatTime"/>
+        </association>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ConsumptionMap">
+        select csp_id,
+               csp_money,
+               store_id,
+               csp_date,
+               u_id,
+               csp_status,
+               csp_time
+        from miniapp.consumption
+        where csp_id = #{cspId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="ConsumptionMap">
+        select csp_id,
+               csp_money,
+               store_id,
+               csp_date,
+               u_id,
+               csp_status,
+               csp_time
+        from miniapp.consumption
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="ConsumptionMap">
+        select
+        csp_id, csp_money, store_id, csp_date, u_id, csp_status, csp_time
+        from miniapp.consumption
+        <where>
+            <if test="cspId != null">
+                and csp_id = #{cspId}
+            </if>
+            <if test="cspMoney != null">
+                and csp_money = #{cspMoney}
+            </if>
+            <if test="storeId != null">
+                and store_id = #{storeId}
+            </if>
+            <if test="cspDate != null">
+                and csp_date = #{cspDate}
+            </if>
+            <if test="uId != null">
+                and u_id = #{uId}
+            </if>
+            <if test="cspStatus != null">
+                and csp_status = #{cspStatus}
+            </if>
+            <if test="cspTime != null">
+                and csp_time = #{cspTime}
+            </if>
+        </where>
+    </select>
+    <select id="queryByTime" resultMap="ConsumptionStore">
+        select csp.csp_id capCspId,
+               csp.csp_money cspCspMoney,
+               csp.store_id cspStoreId,
+               csp.csp_date cspCspDate,
+               csp.u_id capCspUId,
+               csp.csp_status cspCspStatus,
+               csp.csp_time capCspTime,
+               s.store_id sId,
+               s.store_name sName,
+               s.creat_time sCreatTime
+        from consumption csp
+        LEFT JOIN store s on csp.store_id = s.store_id
+        where u_id = #{uId} and csp_date = #{time};
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="cspId" useGeneratedKeys="true">
+        insert into miniapp.consumption(csp_money, store_id, csp_date, u_id, csp_status, csp_time)
+        values (#{cspMoney}, #{storeId}, #{cspDate}, #{uId}, #{cspStatus}, #{cspTime})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="cspId" useGeneratedKeys="true">
+        insert into miniapp.consumption(csp_money, store_id, csp_date, u_id, csp_status, csp_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.cspMoney}, #{entity.storeId}, #{entity.cspDate}, #{entity.uId}, #{entity.cspStatus},
+            #{entity.cspTime})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="cspId" useGeneratedKeys="true">
+        insert into miniapp.consumption(csp_money, store_id, csp_date, u_id, csp_status, csp_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.cspMoney}, #{entity.storeId}, #{entity.cspDate}, #{entity.uId}, #{entity.cspStatus},
+            #{entity.cspTime})
+        </foreach>
+        on duplicate key update
+        csp_money = values(csp_money) , store_id = values(store_id) , csp_date = values(csp_date) , u_id = values(u_id)
+        , csp_status = values(csp_status) , csp_time = values(csp_time)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update miniapp.consumption
+        <set>
+            <if test="cspMoney != null">
+                csp_money = #{cspMoney},
+            </if>
+            <if test="storeId != null">
+                store_id = #{storeId},
+            </if>
+            <if test="cspDate != null">
+                csp_date = #{cspDate},
+            </if>
+            <if test="uId != null">
+                u_id = #{uId},
+            </if>
+            <if test="cspStatus != null">
+                csp_status = #{cspStatus},
+            </if>
+            <if test="cspTime != null">
+                csp_time = #{cspTime},
+            </if>
+        </set>
+        where csp_id = #{cspId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from miniapp.consumption
+        where csp_id = #{cspId}
+    </delete>
+
+</mapper>
+

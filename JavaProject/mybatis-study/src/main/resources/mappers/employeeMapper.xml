@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ender.mapper.EmployeeMapper">
+<!--    <resultMap id="EmployeeDept" type="com.ender.entity.Employee">-->
+<!--        <id property="id" column="eid" />-->
+<!--        <result property="name" column="ename" />-->
+<!--        <association property="dept" javaType="com.ender.entity.Dept">-->
+<!--            <id property="id" column="did" />-->
+<!--            <result property="name" column="dname" />-->
+<!--        </association>-->
+<!--    </resultMap>-->
+<!--    <select id="findEmployees" resultMap="EmployeeDept">-->
+<!--        SELECT e.id eid, e.name ename, d.id did, d.name dname-->
+<!--        FROM employee e-->
+<!--        LEFT JOIN dept d-->
+<!--        on e.did = d.id-->
+<!--    </select>-->
+<!--    <select id="findEmployeesById" parameterType="int" resultMap="EmployeeDept">-->
+<!--        SELECT e.id eid, e.name ename,d.id did,d.name dname-->
+<!--        FROM employee e-->
+<!--        LEFT JOIN dept d-->
+<!--        on e.did = d.id where e.id = #{id}-->
+<!--    </select>-->
+
+    <resultMap id="EmployeeDept" type="com.ender.entity.Employee">
+        <association property="dept" javaType="com.ender.entity.Dept" select="com.ender.mapper.DeptMapper.findDeptById" column="did" />
+    </resultMap>
+
+    <select id="findEmployees" resultMap="EmployeeDept">
+        SELECT id,name,did FROM employee
+    </select>
+    <select id="findEmployeesById" resultMap="EmployeeDept">
+        SELECT id,name,did FROM employee WHERE id = #{id}
+    </select>
+    <select id="findEmployeesByDid" resultType="employee">
+        SELECT id,name,did FROM employee WHERE did = #{id}
+    </select>
+</mapper>

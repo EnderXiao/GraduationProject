@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--对xml的约束-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 1.0//EN"
+        "http://mybatis.org/schema/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="logImpl" value="log4j"/>
+    </settings>
+    <typeAliases>
+        <package name="com.ender.entity"/>
+    </typeAliases>
+    <!--环境-->
+    <environments default="development">
+        <environment id="development">
+            <!--事物管理器-->
+            <transactionManager type="JDBC">
+                <property name="..." value="..."/>
+            </transactionManager>
+            <!--数据源-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/ssm?useSSL=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="mappers/UserMapper.xml"/>
+        <mapper class="com.ender.dao.AdminMapper"/>
+        <mapper resource="mappers/DeptMapper.xml" />
+        <mapper resource="mappers/employeeMapper.xml" />
+    </mappers>
+</configuration>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+<!--以上用于约束Spring配置文件的xml文件-->
+
+    <!--扫描组件-->
+    <context:component-scan base-package="top.ender"/>
+    
+    <!--setter注入-->
+    <bean name="address" class="top.ender.Address">
+        <property name="addressInfo" value="北京西总布胡同"/>
+    </bean>
+
+    <bean name="user1" class="top.ender.User">
+        <property name="name" value="Lucy" />
+        <property name="hobbies">
+            <array value-type="java.lang.String">
+                <value>吉他</value>
+                <value>跑步</value>
+                <value>游戏</value>
+            </array>
+        </property>
+        <property name="duties">
+            <list value-type="java.lang.String">
+                <value>前端工程师</value>
+                <value>后端工程师</value>
+            </list>
+        </property>
+        <property name="familyTies">
+            <map>
+                <entry key="父亲" value="宫村洢澄"/>
+                <entry key="母亲" value="堀京子"/>
+            </map>
+        </property>
+        <property name="carts">
+            <set>
+                <value>吉他</value>
+                <value>键盘</value>
+            </set>
+        </property>
+        <property name="workExperience">
+            <props>
+                <prop key="米哈游">工作五年</prop>
+                <prop key="Devolver Digital">工作五年</prop>
+            </props>
+        </property>
+        <property name="daughter">
+            <null/>
+        </property>
+    </bean>
+
+<!--    &lt;!&ndash;constructor注入&ndash;&gt;-->
+<!--    <bean name="user2" class="top.ender.User">-->
+<!--        &lt;!&ndash;按照形参名字注入&ndash;&gt;-->
+<!--        <constructor-arg name="name" value="Lucy" />-->
+<!--        <constructor-arg name="age" value="18" />-->
+<!--        &lt;!&ndash;按参数顺序构造&ndash;&gt;-->
+<!--        <constructor-arg index="0" value="Tom" />-->
+<!--        <constructor-arg index="1" value="20" />-->
+<!--        &lt;!&ndash;按参数类型构造,同类型按先后顺序赋值&ndash;&gt;-->
+<!--        <constructor-arg type="java.lang.Integer" value="22" />-->
+<!--        <constructor-arg type="java.lang.String" value="Jerry" />-->
+<!--        <constructor-arg type="java.lang.String" value="Hello World" />-->
+<!--    </bean>-->
+
+</beans>

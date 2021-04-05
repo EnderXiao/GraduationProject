@@ -1,0 +1,130 @@
+/* pages/education/index/index.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.global {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  display: inline-block;
+  background-image: linear-gradient(to bottom right, rgb(25, 43, 57), rgb(75, 96, 115));
+  text-align: center;
+}
+
+.card {
+  z-index: 2;
+  height: auto;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 150rpx;
+  border-radius: 20rpx;
+  color: black;
+  box-shadow: 3px 3px 10px 0px rgb(36, 46, 56);
+}
+
+.card .card-image {
+  height: 60%;
+  width: 100%;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  position: relative;
+}
+
+.card .main-card-image {
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+}
+
+.card .card-content {
+  width: 100%;
+  height: auto;
+  line-height: 100%;
+}
+
+.card .card-content .card-content-textblock {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 45rpx;
+  padding-right: 3%;
+  padding-top: 5%;
+  color: #3e91a3;
+  font-weight: bolder;
+}
+
+.main-methods {
+  position: relative;
+  z-index: 0;
+  height: auto;
+  width: 100%;
+}
+
+.methods {
+  height: 165rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.card-methods {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 45%;
+  border-radius: 20rpx;
+  color: snow;
+  border: 2rpx;
+  border-color: #78c2c4;
+  box-shadow: 3px 3px 10px 0px rgb(36, 46, 56);
+}
+
+.ad-methods {
+  position: relative;
+  display: inline-block;
+  margin-top: 45%;
+  height: 10%;
+  width: 30%;
+}
+.slogan {
+  width: auto;
+  height: auto;
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 4px rgb(158, 88, 67);
+  color: rgb(196, 105, 77);
+  padding: 2%;
+}
+
+.card-methods .card-methods-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 18%;
+  text-align: center;
+  font-size: 40rpx;
+}
+
+navigator {
+  height: 100%;
+  width: 100%;
+}
+
+.methods-card-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx;
+  filter: contrast(70%);
+}

@@ -1,0 +1,99 @@
+/* pages/profix/profix.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+}
+.global{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: inline-block;
+  background-image: linear-gradient(to bottom right,rgb(136,115,102),rgb(238, 192, 114));
+}
+.card{
+  z-index: 0;
+  height: 70%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 20%;
+  border-radius: 20rpx; 
+}
+.card .card-image{
+  z-index: 4;
+  height: 35%;
+  width: 100%;
+  border-radius: 20rpx; 
+  position: relative;
+  box-shadow: 3px 3px 10px 0px rgb(136,115,102);
+
+}
+.card .main-card-image{
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx; 
+  position: relative;
+}
+.card .card-image .ctitle{
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  text-align: center;
+  position: absolute;
+  font-size: 40rpx;
+  font-weight: bolder;
+  bottom: 0px;
+  width: 100%;
+}
+.card .card-content{
+  position: relative;
+  height: 10%;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background-color: #DAC9A6;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 3px 3px 10px 0px rgb(136,115,102);
+}
+.card .card-content .card-content-textblock{
+  margin: 0 auto;
+  font-size: 30rpx;
+  font-weight: bolder;
+  width: 80%;
+  height: 55rpx;
+  text-align: center;
+  box-shadow: 3px 3px 10px 0px rgb(136,115,102);
+  border-radius: 20rpx;
+  line-height: 55rpx;
+}
+.card .card-content .card-content-tag{
+  z-index: 0;
+  display: inline-block;
+  width: 12%;
+  height: 50%;
+}
+.card-button{
+  width: 40%;
+  height: 55rpx;
+  line-height: 55rpx;
+  padding: 0;
+  margin: 10% auto;
+  border-radius: 30rpx;
+  background-color: rgb(150, 84, 84);
+  font-size: 30rpx;
+  font-weight: bolder;
+  text-align: center;
+  color:snow;
+  box-shadow: 3px 3px 10px 0px rgb(136,115,102);
+}
+
+.card .slogan{
+  padding-top: 10%;
+  width: 100%;
+  height: 18%;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgb(54, 54, 60);
+  color: rgb(74, 75, 84);
+}

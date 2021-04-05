@@ -1,0 +1,141 @@
+<!--pages/manager/userManager/userManager.wxml-->
+<view class="global">
+	<view style="margin-top:{{stateH}}px;height:{{stateH}}px;width 5%">
+		<navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack">
+			<text class="cuIcon-back text-gray" style="font-size:40rpx"></text>
+		</navigator>
+	</view>
+	<view class="card">
+		<view class="card-image">
+			<image class="main-card-image" src="https://wx4.sinaimg.cn/mw690/006blzWmgy1g7wwp8bw93j30xc0irn11.jpg"
+				mode="aspectFill"></image>
+			<view class="ctitle">
+				<text>用户信息</text>
+			</view>
+		</view>
+
+		<view class="card-content">
+			<view class="table" style="marigin-top:3%;">
+				<view class="tr-f" style="height:100%">
+					<view class="th">
+						<label>学号</label>
+						<input id="No" bindinput="noInput" type="number" maxlength="10"></input>
+					</view>
+					<view class="th">
+						<label>姓名</label>
+						<input id="name" bindinput="nameInput" type="text" maxlength="10"></input>
+					</view>
+				</view>
+			</view>
+			<button id="rank" class="my-btn" bindtap="findPeople">查询</button>
+		</view>
+	</view>
+	<view class="cells">
+		<swiper bindchange="swiperChange" indicator-dots indicator-color="#9B90C2" indicator-active-color="#3f486f">
+			<swiper-item>
+				<view class="userTable">
+					<view class="userTh">
+						<view class="userTd">
+							<switch bindchange="selectAll" checked="{{selectAll}}"></switch>
+						</view>
+						<view class="userTd">学号</view>
+						<view class="userTd">姓名</view>
+						<view class="userTd">班级</view>
+					</view>
+					<block wx:for="{{memberList}}" wx:for-index="id" wx:for-item="item" wx:key="id">
+						<view class="userTr">
+							<view class="userTd">
+								<switch id="{{id}}" wx:if="{{item.checked != null}}" checked="{{item.checked}}" bindchange="selectOne"></switch>
+							</view>
+							<view class="userTd">{{item.userId}}</view>
+							<view class="userTd">{{item.username}}</view>
+							<view class="userTd">{{item.class}}</view>
+						</view>
+					</block>
+					<view class="userTr">
+						<view class="userTd">
+							<button class="my-btn2" bindtap="previous">上一页</button>
+						</view>
+						<view class="userTd">
+							<button class="my-btn2" bindtap="delete">删除</button>
+						</view>
+						<view class="userTd">
+							<button class="my-btn2" bindtap="resetPassword">重置密码</button>
+						</view>
+						<view class="userTd">
+							<button class="my-btn2" bindtap="next">下一页</button>
+						</view>
+					</view>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<form bindsubmit='addUser'>
+					<view class="userTable">
+						<view class="userTh">
+							<view class="userTd">添加用户</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">学号</view>
+							<view class="userTd">
+								<input type="number" name='userId' maxlength="10">
+								</input>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">姓名</view>
+							<view class="userTd">
+								<input type="text" name='username' maxlength="10">
+								</input>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">银行卡号</view>
+							<view class="userTd">
+								<input type="number" name='bankCardNo' maxlength="20">
+								</input>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">学院</view>
+							<view class="userTd">
+								<picker bindchange="pickerCollegeChange" range="{{userCollege}}" value="{{userCollegeIndex}}">
+									<text class="picker">{{userCollege[userCollegeIndex]}}</text>
+								</picker>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">专业</view>
+							<view class="userTd">
+								<picker bindchange="pickerMajorChange" range="{{userMajor}}" value="{{userMajorIndex}}">
+									<text class="picker">{{userMajor[userMajorIndex]}}</text>
+								</picker>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">班级</view>
+							<view class="userTd">
+								<picker bindchange="pickerClassChange" range="{{userClass}}" value="{{userClassIndex}}">
+									<text class="picker">{{userClass[userClassIndex]}}</text>
+								</picker>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd">用户类型</view>
+							<view class="userTd">
+								<picker bindchange="pickerSratusChange" range="{{userStatus}}" value="{{userStatusIndex}}">
+									<text class="picker">{{userStatus[userStatusIndex]}}</text>
+								</picker>
+							</view>
+						</view>
+						<view class="userTr">
+							<view class="userTd"></view>
+							<view class="userTd">
+								<button class="my-btn2" type="submit" form-type="submit">添加</button>
+							</view>
+						</view>
+					</view>
+				</form>
+			</swiper-item>
+		</swiper>
+	</view>
+</view>

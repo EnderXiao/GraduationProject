@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ender.mapper.DeptMapper">
+    <resultMap id="DeptResult" type="com.ender.entity.Dept">
+        <id property="id" column="did" />
+    </resultMap>
+    <resultMap id="DeptEmployees" type="dept">
+        <id property="id" column="did" />
+        <result property="name" column="dname" />
+        <collection property="employees" ofType="employee">
+            <id property="id" column="eid"/>
+            <result property="name" column="ename"/>
+        </collection>
+    </resultMap>
+    <select id="findDeptById" resultMap="DeptResult">
+        SELECT id did,name FROM dept WHERE id = #{id}
+    </select>
+<!--    结果嵌套-->
+<!--    <select id="findDepts" resultMap="DeptEmployees">-->
+<!--        SELECT d.id did,d.name dname,e.id eid,e.name ename-->
+<!--        FROM dept d-->
+<!--        LEFT JOIN employee e on d.id = e.did-->
+<!--    </select>-->
+<!--    查询嵌套-->
+    <resultMap id="deptEmpResult" type="dept" >
+        <id property="id" column="id"/>
+        <collection property="employees" ofType="employee" column="id" select="com.ender.mapper.EmployeeMapper.findEmployeesByDid"/>
+    </resultMap>
+
+    <select id="findDepts" resultMap="deptEmpResult">
+        SELECT id,name FROM dept
+    </select>
+</mapper>

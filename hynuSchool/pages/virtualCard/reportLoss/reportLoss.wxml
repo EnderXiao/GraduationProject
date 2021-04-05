@@ -1,0 +1,40 @@
+<!--pages/virtualCard/reportLoss/reportLoss.wxml-->
+<view class="global">
+    <view style="margin-top:{{stateH}}px;height:{{stateH}}px;width 5%">
+        <navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack">
+            <text class="cuIcon-back" style="font-size:40rpx"></text>
+        </navigator>
+    </view>
+
+    <view class="card">
+        <view class="card-image">
+            <image class="main-card-image" src="https://wx1.sinaimg.cn/mw690/006blzWmgy1g7wws9638jj31hc0u0e81.jpg"
+                mode="aspectFill"></image>
+        </view>
+        <view class="card-content animated slideInDown">
+            <view class="ttitle">
+                <text>
+                    校园卡当前状态：{{states}}
+                </text>
+            </view>
+            <form bindsubmit="passwordInput">
+                <view class="card-content-textblock">
+                    <view class="card-content-title">
+                        支付密码
+                    </view>
+                    <input name='password' value="{{password}}" type="password" placeholder="输入密码" />
+                </view>
+                <button class="card-button" form-type='submit'>{{buttonMsg}}</button>
+            </form>
+        </view>
+
+        <view class="slogan">
+            <text>
+                "Oh My Darling, You Were Wonderful Tonight."
+            </text>
+            <view style="text-align:right;margin-top:10rpx">
+                <text>———Eric Clapton</text>
+            </view>
+        </view>
+    </view>
+</view>

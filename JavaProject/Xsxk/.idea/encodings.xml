@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/com/java1234/dao/ManagerDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/java1234/dao/StudentCourseDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/java1234/dao/StudentDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/java1234/dao/TeacherDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/java1234/filter/LoginFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/java1234/model/Course.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/java1234/model/Manager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/java1234/model/Teacher.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<!--pages/logIn/login.wxml-->
+<view class="global">
+    <view class="card">
+        <view class="card-image">
+            <image class="main-card-image" src="https://wx3.sinaimg.cn/mw690/006blzWmgy1g7wwrnzem3j30qa0dc75k.jpg" mode="aspectFill"></image>
+        </view>
+        <view class="card-content animated slideInDown">
+            <form bindsubmit='submit'>
+                <view class="card-content-main">
+                    <view class="card-content-textblock">
+                        <view class="input-title">学号</view>
+                        <input type='text' name='userId' placeholder='请输入学号' value='{{userId}}'></input>
+                    </view>
+                    <view class="card-content-textblock">
+                        <view class="input-title">密码</view>
+                        <input type='password' name='password' placeholder='请输入密码' value='{{password}}'></input>
+                    </view>
+                </view>
+                <view class="card-content-tag">
+                    <button form-type='submit' type="submit" class="card-button animated slideInLeft">登陆</button>
+                </view>
+            </form>
+        </view>
+
+        <view class="slogan">
+            <text>
+        "Tender Is The Night Lying By Your Side."
+      </text>
+            <view style="text-align:right;margin-top:10rpx">
+                <text>———Blur </text>
+            </view>
+        </view>
+    </view>
+</view>

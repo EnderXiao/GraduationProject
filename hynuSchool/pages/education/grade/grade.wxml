@@ -1,0 +1,65 @@
+<!--pages/education/grade/grade.wxml-->
+<view class="global">
+	<view style="margin-top:{{stateH}}px;height:{{stateH}}px;width 5%">
+		<navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack">
+			<text class="cuIcon-back text-gray" style="font-size:40rpx"></text>
+		</navigator>
+	</view>
+	<view class="card">
+		<view class="card-image">
+			<image class="main-card-image" src="https://wx2.sinaimg.cn/mw690/006blzWmgy1g8itbaa43bj30vg0hrwlj.jpg" mode="aspectFill"></image>
+		</view>
+
+		<view class="card-content">
+			<view class="table">
+				<view class="tr-f">
+					<picker bindchange="pickerChange" value="{{pickerIndex}}" range="{{schoolYear}}">
+						<view class="td">
+							<text>当前学年: </text>
+							<text class="pickerYear"> {{schoolYear[pickerIndex]}} </text>
+						</view>
+					</picker>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="cells">
+		<scroll-view style="height:100%;width:100%;" scroll-y="true">
+			<block wx:for="{{memberList}}" wx:for-index="id" wx:for-item="item" wx:key="id">
+				<view bindtap="isOpen" class="card-mini animated fadeInRight" data-index="{{item.id}}" style="animation-delay:{{item.id*50}}ms">
+					<view class="table">
+						<view class="tr-f">
+							<view class="th">
+								<text>{{item.cont}}</text>
+							</view>
+							<view class="th">
+								<text>{{item.gradeTotal}}</text>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view hidden="{{item.hidden}}" class="card-content-mini animated slideInDownMy">
+					<view class="table">
+						<block wx:for="{{item.detail}}" wx:for-index="id" wx:for-item="item" wx:key="id">
+							<view class="tr-f" style="margin-top: 5rpx;">
+								<view class="td" style="width:28%;text-align:left">
+									<text>{{item.name}}</text>
+								</view>
+								<view class="td" style="width:68%;text-align:right">
+									<text>{{item.value}}</text>
+								</view>
+							</view>
+						</block>
+					</view>
+				</view>
+			</block>
+			<view wx:if="{{showloading}}" class="card-text-void">加载中......</view>
+			<view wx:else class="card-text-void">
+				<text>
+            没有更多记录
+        </text>
+			</view>
+		</scroll-view>
+	</view>
+</view>

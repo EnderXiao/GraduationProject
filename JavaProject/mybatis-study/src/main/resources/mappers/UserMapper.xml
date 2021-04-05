@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--对xml的约束-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ender.dao.UserMapper">
+    <sql id="user-all-content">
+        select u_id,u_username,u_password from user
+    </sql>
+    <insert id="saveUser" parameterType="com.ender.entity.User">
+        insert into user
+            (
+            <trim suffixOverrides=",">
+                <if test="username != null and username != ''">
+                    u_username,
+                </if>
+                <if test="password != null and password != ''">
+                    u_password,
+                </if>
+            </trim>
+            )value(
+            <trim suffixOverrides=",">
+                <if test="username != null and username != ''">
+                    #{username},
+                </if>
+                <if test="password != null and password != ''">
+                    #{password},
+                </if>
+            </trim>
+            )
+    </insert>
+
+    <update id="updateUser" parameterType="com.ender.entity.User">
+        update user
+        <set>
+            <if test = "username != null and username != ''">
+                u_username = #{username}
+            </if>
+            <if test="password != null and password != ''">
+                u_password = #{password}
+            </if>
+        </set>
+        where u_id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete from user where u_id = #{id}
+    </delete>
+    <select id="selectUsers" resultType="com.ender.entity.User">
+        <include refid="user-all-content"/>
+    </select>
+    <select id="selectUserById" resultType="com.ender.entity.User">
+        <include refid="user-all-content"/>
+        where u_id = #{id}
+    </select>
+    <select id="findUsersByParam" resultType="com.ender.entity.User">
+        <include refid="user-all-content"/>
+        <where>
+            <if test="id != null and id != ''">
+                AND u_id =  #{id}
+            </if>
+            <if test="username != null and username != ''">
+                AND u_username = #{username}
+            </if>
+            <if test="password != null and password != ''">
+                AND u_password = #{password}
+            </if>
+        </where>
+    </select>
+    <select id="fuzzyCheckUser" resultType="com.ender.entity.User">
+        <!-- 有name的时候使用name搜索，没有的时候使用id搜索 -->
+        <include refid="user-all-content"/>
+        <where>
+            <choose>
+                <when test="username != null and username != ''">
+                    AND u_username LIKE concat('%', #{username}, '%')
+                </when>
+                <when test="id != null">
+                    AND u_id = #{id}
+                </when>
+            </choose>
+        </where>
+    </select>
+    <select id="selectUsersByIds" resultType="com.ender.entity.User">
+        <include refid="user-all-content"/>
+        where u_id in
+        <foreach collection="ids" open="(" close=")" separator="," item="id">
+            #{id}
+        </foreach>
+    </select>
+</mapper>

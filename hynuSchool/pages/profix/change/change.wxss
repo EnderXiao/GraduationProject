@@ -1,0 +1,132 @@
+/* pages/profix/change/change.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.global{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: inline-block;
+  background-image: linear-gradient(to bottom right,rgb(136,115,102),rgb(238, 192, 114));
+}
+.card{
+  z-index: 0;
+  height: 85%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 10%;
+  border-radius: 20rpx; 
+  /* color:black; */
+  /* box-shadow: 6px 6px 10px 0px rgb(136,115,102); */
+}
+.card .card-image{
+  z-index: 3;
+  height: 30%;
+  width: 100%;
+  border-radius: 20rpx; 
+  position: relative;
+  box-shadow: 3px 3px 10px 0px rgb(136,115,102);
+
+}
+.card .main-card-image{
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx; 
+}
+.card .card-image .ctitle{
+  z-index: 3;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 25%;
+  text-align:center; 
+  font-weight: bolder;
+  position: absolute;
+  height: 45%;
+  width: 100%;
+  color:snow;
+  font-size: 40rpx; 
+  background-image: linear-gradient(to bottom left,rgb(238, 192, 114),rgb(169, 151, 233));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  line-height: 30rpx;
+  /* color: rgb(169, 151, 233); */
+}
+
+.card .card-content{
+  display: inline-block;
+  position: relative;
+  height: 70%;
+  width: 96%;
+  margin-left: 2%;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background-color: #DAC9A6;
+  box-shadow: 3px 3px 10px 0px rgb(136,115,102);
+}
+
+.card .card-content .card-content-textblock{
+  margin-left: 5%;
+  margin-top: 7%;
+  font-size: 30rpx;
+  font-style: ‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
+  width: 90%;
+  height: 20%;
+  text-align: center;
+  padding-top: 3%;
+  box-shadow: 3px 3px 10px 0px rgb(136,115,102);
+  background-color: rgb(196, 155, 121);
+  border-radius: 20rpx;
+}
+
+.card .card-content .card-content-tag{
+  z-index: 0;
+  display: inline-block;
+  width: 12%;
+  height: 50%;
+}
+.card-button{
+  line-height: 50rpx;
+  width: 40%;
+  height: 7%;
+  margin-top: 7%;
+  margin-left: 30%;
+  border-radius: 30rpx;
+  background-color: rgb(150, 84, 84);
+  font-size: 30rpx;
+  text-align: center;
+  color:snow;
+  box-shadow: 3px 3px 10px 0px rgb(136,115,102);
+}
+
+.input-title{
+  margin-top: 10%; 
+  font-size: 35rpx;
+  display: inline-block;
+}
+
+input {
+    margin-top: 3%;
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
+    height: 35%;
+    background-color: rgb(105,100,123);
+    border-radius: 25rpx;
+
+}
+
+.card .slogan{
+  padding-top: 10%;
+  width: 100%;
+  height: 20%;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgb(54, 54, 60);
+  color: rgb(74, 75, 84);
+}

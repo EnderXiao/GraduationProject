@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.ender.miniapp.dao.VirtualCardDao">
+
+    <resultMap type="top.ender.miniapp.entity.VirtualCard" id="VirtualCardMap">
+        <result property="vcId" column="vc_id" jdbcType="INTEGER"/>
+        <result property="uId" column="u_id" jdbcType="VARCHAR"/>
+        <result property="restMoney" column="rest_money" jdbcType="INTEGER"/>
+        <result property="cardStatus" column="card_status" jdbcType="INTEGER"/>
+        <result property="creatTime" column="creat_time" jdbcType="TIMESTAMP"/>
+        <result property="lastEditTime" column="last_edit_time" jdbcType="TIMESTAMP"/>
+        <result property="vcPassword" column="vc_password" jdbcType="VARCHAR"/>
+        <result property="bankName" column="bank_name" jdbcType="VARCHAR"/>
+        <result property="bankCard" column="bank_card" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="VirtualCardMap">
+        select vc_id,
+               u_id,
+               rest_money,
+               card_status,
+               creat_time,
+               last_edit_time,
+               vc_password,
+               bank_name,
+               bank_card
+        from miniapp.virtualcard
+        where vc_id = #{vcId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="VirtualCardMap">
+        select vc_id,
+               u_id,
+               rest_money,
+               card_status,
+               creat_time,
+               last_edit_time,
+               vc_password,
+               bank_name,
+               bank_card
+        from miniapp.virtualcard
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="VirtualCardMap">
+        select
+        vc_id, u_id, rest_money, card_status, creat_time, last_edit_time,vc_password
+        from miniapp.virtualcard
+        <where>
+            <if test="vcId != null">
+                and vc_id = #{vcId}
+            </if>
+            <if test="uId != null">
+                and u_id = #{uId}
+            </if>
+            <if test="restMoney != null">
+                and rest_money = #{restMoney}
+            </if>
+            <if test="cardStatus != null">
+                and card_status = #{cardStatus}
+            </if>
+            <if test="creatTime != null">
+                and creat_time = #{creatTime}
+            </if>
+            <if test="lastEditTime != null">
+                and last_edit_time = #{lastEditTime}
+            </if>
+            <if test="vcPassword != null">
+                and vc_password = #{vcPassword}
+            </if>
+            <if test="bankName != null">
+                and bank_name = #{bankName}
+            </if>
+            <if test="bankCard != null">
+                and bank_card = #{bankCard}
+            </if>
+        </where>
+    </select>
+
+    <!--通过用户id查找单个-->
+    <select id="queryByUserId" resultType="top.ender.miniapp.entity.VirtualCard">
+        select vc_id,
+               u_id,
+               rest_money,
+               card_status,
+               creat_time,
+               last_edit_time,
+               vc_password,
+               bank_name,
+               bank_card
+        from miniapp.virtualcard
+        where u_id = #{u_id}
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="vcId" useGeneratedKeys="true">
+        insert into miniapp.virtualcard(u_id, rest_money, card_status, creat_time, last_edit_time,vc_password,bank_name,bank_card)
+        values (#{uId}, #{restMoney}, #{cardStatus}, #{creatTime}, #{lastEditTime},#{vcPassword},#{bankName},#{bankCard})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="vcId" useGeneratedKeys="true">
+        insert into miniapp.virtualcard(u_id, rest_money, card_status, creat_time, last_edit_time,vc_password,bank_name,bank_card)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.uId}, #{entity.restMoney}, #{entity.cardStatus}, #{entity.creatTime}, #{entity.lastEditTime},#{vcPassword},#{bankName},#{bankCard})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="vcId" useGeneratedKeys="true">
+        insert into miniapp.virtualcard(u_id, rest_money, card_status, creat_time, last_edit_time,vc_password,bank_name,bank_card)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.uId}, #{entity.restMoney}, #{entity.cardStatus}, #{entity.creatTime}, #{entity.lastEditTime},#{vcPassword},#{bankName},#{bankCard})
+        </foreach>
+        on duplicate key update
+        u_id = values(u_id) , rest_money = values(rest_money) , card_status = values(card_status) , creat_time =
+        values(creat_time) , last_edit_time = values(last_edit_time), vc_password = values(vc_password), bank_name = values(bank_name), bank_card = values(bank_card)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update miniapp.virtualcard
+        <set>
+            <if test="uId != null">
+                u_id = #{uId},
+            </if>
+            <if test="restMoney != null">
+                rest_money = #{restMoney},
+            </if>
+            <if test="cardStatus != null">
+                card_status = #{cardStatus},
+            </if>
+            <if test="creatTime != null">
+                creat_time = #{creatTime},
+            </if>
+            <if test="lastEditTime != null">
+                last_edit_time = #{lastEditTime},
+            </if>
+            <if test="vcPassword != null">
+                vc_password = #{vcPassword},
+            </if>
+            <if test="bankName != null">
+                bank_name = #{bankName}
+            </if>
+            <if test="bankCard != null">
+                bank_card = #{bankCard}
+            </if>
+        </set>
+        where vc_id = #{vcId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from miniapp.virtualcard
+        where vc_id = #{vcId}
+    </delete>
+    <delete id="deleteByUserId">
+        delete
+        from miniapp.virtualcard
+        where u_id = #{uId}
+    </delete>
+
+</mapper>
+

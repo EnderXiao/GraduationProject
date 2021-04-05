@@ -1,0 +1,84 @@
+<!--pages/education/schedule/schedule.wxml-->
+<view class="global">
+	<view style="margin-top:{{stateH}}px;height:{{stateH}}px;width 5%">
+		<navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack">
+			<text class="cuIcon-back text-gray" style="font-size:40rpx"></text>
+		</navigator>
+	</view>
+
+	<view class="card">
+		<view class="card-image">
+			<image class="main-card-image" src="https://wx4.sinaimg.cn/mw690/006blzWmgy1g8irety6ufj30q60dbab8.jpg" mode="aspectFill"></image>
+			<view class="cweek">
+				<picker bindchange="pickerChange" range="{{schoolWeek}}" value="{{weekIndex}}">
+					<text>第</text>
+					<text class="pickerWeek" style="text-aligin:center"> {{schoolWeek[weekIndex]}} </text>
+					<text>周</text>
+				</picker>
+			</view>
+			<view class="cday" style="margin-top:25%">
+				<view class="table">
+					<view class="tr-day">
+						<view class="td-day" style="width:8%;">
+							<text>{{month}}\n月</text>
+						</view>
+						<block wx:for="{{dayArray}}" wx:key="index">
+							<view class="td-day today" wx:if="{{item.day==day}}">{{item.day}}</view>
+							<view class="td-day" wx:else>{{item.day}}</view>
+						</block>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="card-content">
+			<scroll-view style="height:99%;width:99%;border-radius:20rpx;" scroll-y="true">
+
+				<view class="table">
+					<view class="tr-f">
+						<view class="th-f" style="background: linear-gradient(to top right,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) calc(50% - 1.5px),rgba(0, 0, 0, 1) 50%,rgba(0, 0, 0, 0) calc(50% + 1.5px),rgba(0, 0, 0, 0) 100%)"></view>
+						<view class="th">一</view>
+						<view class="th">二</view>
+						<view class="th">三</view>
+						<view class="th">四</view>
+						<view class="th">五</view>
+						<view class="th">六</view>
+						<view class="th">七</view>
+					</view>
+					<block wx:for="{{listData}}" wx:key="index" wx:for-index="courseNo">
+						<view class="tr">
+							<view class="td-f">{{classArray[courseNo]}}</view>
+							<block wx:for="{{item}}" wx:key="index" wx:for-index="dayNo">
+								<view id="{{courseNo}}-{{dayNo}}" wx:if="{{item== null }}" class="td">
+									<text></text>
+								</view>
+								<view id="{{courseNo}}-{{dayNo}}" wx:else class="td haveClass" bindtap="showDetail">
+									<text>{{item.courseName}}</text>
+								</view>
+							</block>
+						</view>
+					</block>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+
+	<view class="footer">
+		<text class="cuIcon-refresh lg text-gray" bindtap="refresh" style="margin-right:5px"></text>
+		<text class="cuIcon-settings lg text-gray" bindtap="setting" style="margin-left:5px"></text>
+	</view>
+	<modal hidden="{{hiddenmodalput}}" title="输入开学时间" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+		<input type="number" bindinput="myMonth" maxlength="2" />
+		<text style="font-size:20px">月</text>
+		<input type="number" bindinput="myDay" maxlength="2" />
+		<text style="font-size:20px">日</text>
+	</modal>
+	<modal hidden="{{hiddenModalDetail}}" title="详细信息" confirm-text = "确定" bindconfirm="detailConfirm" no-cancel>
+		<view>
+			课程名：{{detail.courseName}}
+		</view>
+		<view>
+			上课地点：{{detail.classroom.areaName}} {{detail.classroom.classBuilding}} {{detail.classroom.classRoomNo}}
+		</view>
+	</modal>
+</view>

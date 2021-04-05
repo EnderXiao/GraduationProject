@@ -1,0 +1,74 @@
+<!--pages/virtualCard/bill/bill.wxml-->
+<view class="global">
+  <view style="margin-top:{{stateH}}px;height:{{stateH}}px;width 5%">
+    <navigator style="height:100%;width:100%;padding-left:2%" open-type="navigateBack">
+      <text class="cuIcon-back" style="font-size:40rpx"></text>
+    </navigator>
+  </view>
+
+  <swiper style="height:90%;width:100%;" indicator-dots indicator-color="#7DB9DE" indicator-active-color="#3A8FB7"
+    bindchange="createNewSwiper">
+    <swiper-item wx:for="{{swiperItem}}" wx:key="id">
+      <view class="card">
+        <view class="card-image">
+          <image class="main-card-image" src="https://wx4.sinaimg.cn/mw690/006blzWmgy1g7z6nozt3cj30vk0hsjx5.jpg"
+            mode="aspectFill"></image>
+          <view class="ctitle">
+            <text>{{item.year}}年{{item.month}}月</text>
+            <picker bindchange="pickerDayChange" range="{{pickerDay}}" value="{{dayIndex}}">
+              <text class="picker">{{pickerDay[dayIndex]}}</text>
+            </picker>
+          </view>
+        </view>
+
+        <view class="card-content">
+          <view class="VerticalBox" style="height:100%;width:100%">
+            <scroll-view style="height:100%;width:100%;" scroll-y="true" bindscrolltolower="loadingmore">
+
+              <view class="card-content-textblock" wx:if="{{item.table!=null}}" wx:for="{{item.table}}"
+                wx:for-item="item2" wx:for-index="idx" wx:key="{{item2.cspTime}}" id="{{idx}}" bindtap="paymsg">
+
+                <view class="table">
+
+                  <view class="tr-f">
+
+                    <view class="td" style="text-align:left">
+                      <text style="font-weight:bolder">{{item2.cspTime}}</text>
+                    </view>
+
+                    <view class="td-image" style="text-align:center">
+                      <image wx:if="{{item2.cspStatus == 1}}" class="state-image" src="../../../res/png/state2.png"
+                        style="width:43%"></image>
+                      <image wx:else class="state-image" src="../../../res/png/state1.png" style="width:40%"></image>
+                    </view>
+
+                    <view class="td" style="text-align:left">
+                      <text style="font-weight:bolder">{{item2.store.storeName}}</text>
+                    </view>
+
+                    <view class="td" style="text-align:right;font-size:35rpx">
+                      <text wx:if="{{item2.cspStatus == 0}}">-{{item2.cspMoney}}</text>
+                      <text wx:else>+{{item2.cspMoney}}</text>
+                    </view>
+
+                  </view>
+
+                </view>
+
+              </view>
+
+              <view class="card-text-void" wx:if="{{item.over!=0}}">
+                <text>
+                  没有更多记录
+                </text>
+              </view>
+
+            </scroll-view>
+
+          </view>
+
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
